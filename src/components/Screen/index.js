@@ -1,17 +1,15 @@
 import PropTypes from 'proptypes';
 
-import FirstScreen from './FirstScreen';
-import SecondScreen from './SecondScreen';
-import ThirdScreen from './ThirdScreen';
+import A from './A';
+import B from './B';
+import C from './C';
+import D from './D';
+import E from './E';
 
-const Screen = ({ n }) => {
-  const screens = [FirstScreen, SecondScreen, ThirdScreen];
-
-  return screens[n - 1]();
-};
+const Screen = ({ l }) => ({ A, B, C, D, E }[l]());
 
 Screen.propTypes = {
-  n: PropTypes.number.isRequired,
+  l: PropTypes.oneOf(['A', 'B', 'C', 'D', 'E']).isRequired,
 };
 
 export default Screen;

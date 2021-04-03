@@ -27,7 +27,7 @@ const StyledButtonsWrapper = styled.div`
   }
 `;
 
-const FirstScreen = () => (
+const Screen = () => (
   <StyledWrapper>
     <h1 className="center super size-1">
       Construímos y desarrollamos Webs a medida
@@ -62,4 +62,4 @@ const FirstScreen = () => (
   </StyledWrapper>
 );
 
-export default FirstScreen;
+export default Screen;

@@ -11,9 +11,11 @@ const App = () => (
     <MobileHeader />
 
     <StyledScreensWrapper>
-      <Screen n={1} />
-      <Screen n={2} />
-      <Screen n={3} />
+      <Screen l="A" />
+      <Screen l="B" />
+      <Screen l="C" />
+      <Screen l="D" />
+      <Screen l="E" />
     </StyledScreensWrapper>
   </StyledAppWrapper>
 );

@@ -16,20 +16,12 @@ const StyledText = styled.p`
 `;
 
 const StyledGraySquareAndTwoPhonesImageWrapper = styled.div`
-  overflow: hidden;
   position: relative;
-`;
-
-const StyledTwoPhonesImage = styled.img`
-  left: -45%;
-  position: relative;
-  width: 165%;
-  z-index: -1;
 `;
 
 const StyledGraySquare = styled.div`
   background-color: ${color.almostWhite};
-  height: 600px;
+  height: 590px;
   left: 0;
   position: absolute;
   top: 90px;
@@ -37,7 +29,17 @@ const StyledGraySquare = styled.div`
   z-index: -2;
 `;
 
-const ThirdScreen = () => (
+const StyledTwoPhonesImageWrapper = styled.div`
+  overflow: hidden;
+`;
+
+const StyledTwoPhonesImage = styled.img`
+  left: -45%;
+  position: relative;
+  width: 165%;
+`;
+
+const Screen = () => (
   <StyledWrapper>
     <StyledTitleAndSubtitleWrapper>
       <p className="center super size-1">SOMOS MONSI</p>
@@ -51,9 +53,12 @@ const ThirdScreen = () => (
 
     <StyledGraySquareAndTwoPhonesImageWrapper>
       <StyledGraySquare />
-      <StyledTwoPhonesImage alt="" src={twoPhonesImage} />
+
+      <StyledTwoPhonesImageWrapper>
+        <StyledTwoPhonesImage alt="" src={twoPhonesImage} />
+      </StyledTwoPhonesImageWrapper>
     </StyledGraySquareAndTwoPhonesImageWrapper>
   </StyledWrapper>
 );
 
-export default ThirdScreen;
+export default Screen;

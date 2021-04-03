@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 import cityImage from '../../../assets/images/city.png';
 import { color } from '../../../styles';
-import firstIcon from '../../../assets/icons/second-screen-first-icon.svg';
-import secondIcon from '../../../assets/icons/second-screen-second-icon.svg';
-import thirdIcon from '../../../assets/icons/second-screen-third-icon.svg';
+import firstIcon from '../../../assets/icons/screen-B-first-icon.svg';
+import secondIcon from '../../../assets/icons/screen-B-second-icon.svg';
+import thirdIcon from '../../../assets/icons/screen-B-third-icon.svg';
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -41,7 +41,7 @@ const StyledIcon = styled.img`
   width: 50px;
 `;
 
-const SecondScreen = () => (
+const Screen = () => (
   <StyledWrapper>
     <StyledCityImage alt="" src={cityImage} />
 
@@ -73,4 +73,4 @@ const SecondScreen = () => (
   </StyledWrapper>
 );
 
-export default SecondScreen;
+export default Screen;
